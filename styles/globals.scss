@@ -1,0 +1,22 @@
+$primary: #0597f2;
+$secondary: #2d1180;
+
+$link-color: $secondary;
+$navbar-light-color: $secondary;
+
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/transitions';
+@import 'bootstrap/scss/utilities';
+
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/code';
+@import 'bootstrap/scss/grid';
+
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/navbar';
+@import 'bootstrap/scss/nav';
+@import 'bootstrap/scss/dropdown';
