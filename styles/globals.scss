@@ -1,8 +1,8 @@
-$primary: #0597f2;
-$secondary: #2d1180;
+$primary: #2d1180;
+$secondary: #f2cb61;
 
-$link-color: $secondary;
-$navbar-light-color: $secondary;
+$link-color: $primary;
+$navbar-light-color: $primary;
 
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';

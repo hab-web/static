@@ -1,5 +1,4 @@
 import {
-	Button,
 	Col,
 	Container,
 	Row
@@ -15,13 +14,40 @@ const video = '/HAB_WE-ARE-HAB_A_PL.mp4';
 export default function Home() {
 	return (
 		<Main title='Home - Hawaii Association of the Blind'>
-			<Jumbotron bgImage={headerImage}>
+			<Jumbotron
+				bgImage={headerImage}
+				height={60}>
 				<h1>Hawaii Association of the Blind</h1>
 				<p>
 					“advocating independence, equality, and
 					opportunity or the blind”
 				</p>
 			</Jumbotron>
+			<section className='bg-primary text-white text-center py-5'>
+				<Container>
+					<h2>Upcoming Events</h2>
+					<Row className='py-3'>
+						<Col md={4}>
+							<h3>ACB National Convention</h3>
+							<p>July 16 - 23, 2021</p>
+						</Col>
+						<Col md={4}>
+							<h3>HAB Monthly Meeting</h3>
+							<p>
+								Saturday August 7, 2021 10:00 AM -
+								12:00 PM
+							</p>
+						</Col>
+						<Col md={4}>
+							<h3>PAC Back To School Event</h3>
+							<p>
+								Saturday August 21, 2021 11:00 AM
+								- 1:00 PM
+							</p>
+						</Col>
+					</Row>
+				</Container>
+			</section>
 			<Container className='py-5'>
 				<Row>
 					<Col md={6}>
