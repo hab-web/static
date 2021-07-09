@@ -2,7 +2,7 @@ import {
 	Container,
 	Nav,
 	Navbar,
-	NavDropdown
+	NavDropdown,
 } from 'react-bootstrap';
 import Link from 'next/link';
 
@@ -31,6 +31,9 @@ const MainNav = () => {
 					<Nav className='ml-auto'>
 						<Link href='/' passHref>
 							<Nav.Link>Home</Nav.Link>
+						</Link>
+						<Link href='/about' passHref>
+							<Nav.Link>About</Nav.Link>
 						</Link>
 					</Nav>
 				</Navbar.Collapse>

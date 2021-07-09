@@ -4,18 +4,18 @@ import Link from 'next/link';
 import {
 	Button,
 	Container,
-	Nav
+	Nav,
 } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faFacebookF,
-	faYoutube
+	faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 
 import MainNav from '../../components/MainNav/MainNav';
 
-const Main = ({ children, title }) => {
+const Main = ({ children, title, headline }) => {
 	return (
 		<>
 			<Head>
@@ -26,6 +26,11 @@ const Main = ({ children, title }) => {
 					crossOrigin='anonymous'></script>
 			</Head>
 			<MainNav />
+			{headline && (
+				<div className='bg-primary text-light text-center mb-5 py-5'>
+					<h1>{headline}</h1>
+				</div>
+			)}
 			{children}
 			<section className='bg-primary text-white text-center mt-5 py-5'>
 				<Container>
@@ -55,6 +60,7 @@ const Main = ({ children, title }) => {
 							<Nav.Link>
 								<FontAwesomeIcon
 									size='2x'
+									title='Follow us on Facebook'
 									icon={faFacebookF}
 								/>
 							</Nav.Link>
@@ -65,6 +71,7 @@ const Main = ({ children, title }) => {
 							<Nav.Link>
 								<FontAwesomeIcon
 									size='2x'
+									title='Subscribe to our YouTube channel'
 									icon={faYoutube}
 								/>
 							</Nav.Link>
@@ -80,7 +87,7 @@ Main.propTypes = {
 	/**
 	 * The content of the <title> tag
 	 */
-	title: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired,
 };
 
 export default Main;

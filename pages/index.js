@@ -1,15 +1,15 @@
 import {
 	Col,
 	Container,
-	Row
+	Row,
 } from 'react-bootstrap';
 import Main from '../templates/Main/Main';
 
 import Video from '../components/Video/Video';
 import Jumbotron from '../components/Jumbotron/Jumbotron';
 
-const headerImage = '/we_are_hab.png';
-const video = '/HAB_WE-ARE-HAB_A_PL.mp4';
+const headerImage = '/We_are_HAB.png';
+const video = '/We_are_HAB.mp4';
 
 export default function Home() {
 	return (
@@ -17,11 +17,13 @@ export default function Home() {
 			<Jumbotron
 				bgImage={headerImage}
 				height={60}>
-				<h1>Hawaii Association of the Blind</h1>
-				<p>
-					“advocating independence, equality, and
-					opportunity or the blind”
-				</p>
+				<>
+					<h1>Hawaii Association of the Blind</h1>
+					<p>
+						“advocating independence, equality,
+						and opportunity for the blind”
+					</p>
+				</>
 			</Jumbotron>
 			<section className='bg-primary text-white text-center py-5'>
 				<Container>

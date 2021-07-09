@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const Jumbotron = ({
 	bgImage,
 	children,
-	height
+	height,
 }) => {
 	return (
 		<div
@@ -12,7 +12,8 @@ const Jumbotron = ({
 			style={{
 				height: `${height}vh`,
 				background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage})`,
-				backgroundSize: 'cover'
+				backgroundSize: 'cover',
+				backgroundPosition: 'center top',
 			}}>
 			<Container className='text-center'>
 				{children}
@@ -33,7 +34,7 @@ Jumbotron.propTypes = {
 	/**
 	 * The height of the Jumbotron in Vewport Height units.
 	 */
-	height: PropTypes.number.isRequired
+	height: PropTypes.number.isRequired,
 };
 
 export default Jumbotron;
