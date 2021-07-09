@@ -23,13 +23,13 @@ import Main from '../templates/Main/Main';
 
 import Video from '../components/Video/Video';
 
-const habImage = '/we_are_hab.png';
-const habVideo = '/HAB_WE-ARE-HAB_A_PL.mp4';
+const habImage = '/We_are_HAB.png';
+const habVideo = '/We_are_HAB.mp4';
 
 const loveImage = '/HAB_Love_Is_Blind.png';
 const loveVideo = '/HAB_Love_Is_Blind.mp4';
 
-const childImage = '/HAB Child.mp4.png';
+const childImage = '/HAB_Child.png';
 const childVideo = '/HAB_Child.mp4';
 
 export default function Home() {
