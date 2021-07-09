@@ -35,6 +35,9 @@ const MainNav = () => {
 						<Link href='/about' passHref>
 							<Nav.Link>About</Nav.Link>
 						</Link>
+						<Link href='/resources' passHref>
+							<Nav.Link>Resources</Nav.Link>
+						</Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
